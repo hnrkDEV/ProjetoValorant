@@ -8,7 +8,7 @@ body {
     width: 100vw;
     scroll-behavior: smooth;
     background-color: #2c2c2c;
-    background: linear-gradient(180deg, rgb(46, 1, 1) , black 50%);
+    background: linear-gradient(180deg, rgb(46, 1, 1) , black 30%);
 }
 header {
     display: flex;
