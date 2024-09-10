@@ -61,19 +61,20 @@ header > ul > a:hover {
 #news {
     display: flex;
     justify-content: start;
-    gap: 10%;
+    gap: 0%;
     margin-top: 80px;
     margin-bottom: 50px;
     height: 80vh;
     width: 100vw;
-    background-image: url(./imagens/1373942.png);
+    background-image: url(./imagens/background.png);
     background-position: top;
     background-size: cover;
 }
 #news > div > img {
-    width: 400px;
+    width: 480px;
     overflow-y: hidden;
-
+    margin-left: 180px;
+    filter: drop-shadow(5px 5px 5px black);
 }
 .container {
     overflow-y: hidden;
@@ -94,18 +95,17 @@ header > ul > a:hover {
     font-style: normal;
     font-size: 70px;
     letter-spacing: 8px;
-    border-left: 2px solid purple;
+    margin-top: 30px;
     padding-left: 10px;
+    filter: drop-shadow(5px 5px 10px black);
 }
 .aboutAgent {
     position: relative;
     max-width: 600px;
-    margin: auto;
+    height: 650px;
+    margin-top: 10px;
     padding: 30px;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px black;
+    width: 600px;
 }
 
 .aboutAgent > p {
