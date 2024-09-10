@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
 *{
     margin: 0;
     padding: 0;
+    color: purple;
+    overflow-x: hidden;
+    
 }
 body {
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
     background-color: #2c2c2c;
-    background: linear-gradient(180deg, rgb(46, 1, 1) , black 30%);
+    background: linear-gradient(180deg, purple , black 15%);
 }
 header {
     display: flex;
     align-items: center;
     height: 80px;
     width: 100vw;
+    padding-top: 10px;
     border-bottom: 1px solid rgb(0,0,0);
-    filter: drop-shadow(0px 0px 1px red);
+    filter: drop-shadow(0px 0px 1px purple);
+    overflow-y: hidden;
     background-color: rgb(0, 0, 0);
 }
 header > img {
@@ -28,7 +34,7 @@ header > ul {
     list-style: none;
 }
 header > ul > a{
-    color: red;
+    color: purple;
     text-transform: uppercase;
     margin: 30px;
     font-family: "SUSE", sans-serif;
@@ -38,8 +44,52 @@ header > ul > a{
     font-size: 20px;
     letter-spacing: 2px;
     text-decoration: none;
+    list-style-type: none;
 }
 header > ul > a:hover {
     cursor: pointer;
     text-decoration: 1px underline;
+}
+#news {
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+    margin-top: 30px;
+    margin-left: 10%;
+    height: 65vh;
+    width: 100vw;
+
+}
+#news > div > img {
+    width: 400px;
+    overflow-y: hidden;
+}
+.container {
+    overflow-y: hidden;
+}
+#newAgent {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+#agentName{
+    color: purple;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.aboutAgent {
+    overflow-y: hidden;
+    max-width: 600px;
+}
+.aboutAgent > p {
+    font-size: 20px;
+}
+#aboutList {
+    margin-top: 5%;
+}
+#aboutList > li {
+    margin: 20px;
+    font-size: 20px;
 }
