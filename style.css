@@ -14,11 +14,11 @@ body {
     background: linear-gradient(180deg, purple , black 15%);
 }
 body::-webkit-scrollbar {
-    background: #6c6c6c ;
+    background: black ;
     width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: purple;
+    background-color: #383838;
     border-radius: 10px;
 }
 header {
@@ -58,27 +58,27 @@ header > ul > a:hover {
     cursor: pointer;
     border-bottom: 1px solid red;
 }
-#news {
-    display: flex;
-    justify-content: start;
-    gap: 0%;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    height: 80vh;
-    width: 100vw;
-    background-image: url(./imagens/background.png);
-    background-position: top;
-    background-size: cover;
-}
-#news > div > img {
+
+#container2 > div > img {
     width: 480px;
     overflow-y: hidden;
     margin-left: 180px;
     filter: drop-shadow(5px 5px 5px black);
 }
+#container2 {
+    background-image: url(./imagens/background.png);
+    background-position: top;
+    background-size: cover;
+}
 .container {
     overflow-y: hidden;
-    margin-left: 10%;
+    display: flex;
+    justify-content: start;
+    gap: 0%;
+    margin-top: 80px;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+
 }
 #newAgent {
     color: black;
@@ -96,44 +96,26 @@ header > ul > a:hover {
     font-size: 70px;
     letter-spacing: 8px;
     margin-top: 30px;
-    padding-left: 10px;
-    filter: drop-shadow(5px 5px 10px black);
+    margin-left: -120px;
+    filter: drop-shadow(5px 5px 3px black);
 }
 .aboutAgent {
-    position: relative;
-    max-width: 600px;
     height: 650px;
     margin-top: 10px;
+    margin-left: 20px;
     padding: 30px;
-    width: 600px;
+    width: max-content;
+    text-align: center;
 }
 
-.aboutAgent > p {
-    font-size: 20px;
-    color: black;
-    padding-left: 10px;
-    width: 550px;
-}
-#aboutList {
-    margin-top: 2%;
-    list-style: circle;
-    color: black;
-}
-#aboutList > li {
-    margin: 20px;
-    font-size: 20px;
-}
-#lastLi {
-    border-right: 2px solid purple;
-    border-bottom: 2px solid purple;
-    padding-bottom: 10px;
-}
+
 #videos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 #videos > p {
     width: 800px;
@@ -154,3 +136,26 @@ header > ul > a:hover {
     font-size: 30px;
     letter-spacing: 8px;
 }
+.skills {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.teste {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 900px;
+    transition: opacity 0.5s ease;
+}
+.teste > img {
+    width: 120px;
+}
+.teste > p {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
