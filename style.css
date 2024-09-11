@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     height: 100vh;
@@ -63,7 +63,7 @@ header > ul > a:hover {
     width: 480px;
     overflow-y: hidden;
     margin-left: 180px;
-    filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(5px 5px 5px purple);
 }
 #container2 {
     background-image: url(./imagens/background.png);
@@ -78,7 +78,7 @@ header > ul > a:hover {
     margin-top: 80px;
     width: 100vw;
     backdrop-filter: blur(10px);
-
+    
 }
 #newAgent {
     color: black;
@@ -95,20 +95,22 @@ header > ul > a:hover {
     font-style: normal;
     font-size: 70px;
     letter-spacing: 8px;
-    margin-top: 30px;
     margin-left: -120px;
     filter: drop-shadow(5px 5px 3px black);
 }
 .aboutAgent {
-    height: 650px;
-    margin-top: 10px;
+    height: 700px;
+    margin-top: 0px;
     margin-left: 20px;
-    padding: 30px;
+    padding: 20px;
     width: max-content;
     text-align: center;
 }
-
-
+.aboutAgent > h3 {
+    margin-left: -120px;
+    color: white;
+    text-transform: uppercase;
+}
 #videos {
     display: flex;
     flex-direction: column;
@@ -158,4 +160,38 @@ header > ul > a:hover {
     max-width: 600px;
     margin-left: 20px;
 }
+#moreAgents {
+    padding-top: 50px;
+    height: 350px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+#caixa::-webkit-scrollbar {
+    background: black;
+    color: white;
+    height: 7px;
+}
+#caixa::-webkit-scrollbar-thumb {
+    background-color: #383838;
+    border-radius: 5px;
+}
+#caixa {
+    padding-top: 50px;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    width: 60vw;
+    overflow-x: scroll;
+}
+#caixa > div {
+    border-radius: 5px;
+    min-width: 12rem;
+    margin-left: 3rem;
 
+}
+#caixa > div:hover {
+    transition: 0.5s;
+    transform: translatey(-20px);
+}
